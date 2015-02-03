@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>game - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="game_files/style.css">
+<script async="" src="game_files/cbgapi.loaded_1"></script><script async="" src="game_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="game_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="game_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="game_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="game_files/fastbutton.htm" name="I0_1384611908958" id="I0_1384611908958" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package game</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/game"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+				
+				<dd><a href="#AddGame">func AddGame(usr SimpleUser) revel.Result</a></dd>
+			
+				
+				<dd><a href="#EditGame">func EditGame(usr SimpleUser, game Game) revel.Result</a></dd>
+			
+				
+				<dd><a href="#PostAddGame">func PostAddGame(usr SimpleUser, game Game) revel.Result</a></dd>
+			
+				
+				<dd><a href="#PostEditGame">func PostEditGame(usr SimpleUser, game Game) revel.Result</a></dd>
+			
+			
+				
+				<dd><a href="#Game">type Game</a></dd>
+				
+				
+			
+				
+				<dd><a href="#GameApp">type GameApp</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/game/Game.go">Game.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/game/GameApp.go">GameApp.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+			
+			
+			<h2 id="AddGame">func <a href="http://localhost:6060/src/pkg/colder/game/GameApp.go?s=361:402#L10">AddGame</a></h2>
+			<pre>func AddGame(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+			<p>
+GET: 进入添加游戏界面请求
+</p>
+
+			
+		
+			
+			
+			<h2 id="EditGame">func <a href="http://localhost:6060/src/pkg/colder/game/GameApp.go?s=172:224#L4">EditGame</a></h2>
+			<pre>func EditGame(usr <a href="#SimpleUser">SimpleUser</a>, game <a href="#Game">Game</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+			<p>
+GET: 进入游戏管理界面
+</p>
+
+			
+		
+			
+			
+			<h2 id="PostAddGame">func <a href="http://localhost:6060/src/pkg/colder/game/GameApp.go?s=446:501#L13">PostAddGame</a></h2>
+			<pre>func PostAddGame(usr <a href="#SimpleUser">SimpleUser</a>, game <a href="#Game">Game</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+			<p>
+POST: 添加自定义游戏请求
+</p>
+
+			
+		
+			
+			
+			<h2 id="PostEditGame">func <a href="http://localhost:6060/src/pkg/colder/game/GameApp.go?s=259:315#L7">PostEditGame</a></h2>
+			<pre>func PostEditGame(usr <a href="#SimpleUser">SimpleUser</a>, game <a href="#Game">Game</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+			<p>
+POST: 编辑游戏请求
+</p>
+
+			
+		
+		
+			
+			
+			<h2 id="Game">type <a href="http://localhost:6060/src/pkg/colder/game/Game.go?s=203:310#L1">Game</a></h2>
+			<pre>type Game struct {
+    GameName    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    GameID      <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+    GameCode    <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    GameDoc     <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    GameCreator <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+}</pre>
+			<p>
+储存游戏所有信息
+</p>
+<pre>GameName: 游戏名
+GameID: 游戏序号
+GameCode: 游戏代码文件路径
+GameDoc: 游戏规则说明文件路径
+GameCreator: 创建者
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="GameApp">type <a href="http://localhost:6060/src/pkg/colder/game/GameApp.go?s=92:135#L1">GameApp</a></h2>
+			<pre>type GameApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理游戏管理界面的请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="game_files/postmessageRelay.htm" id="oauth2relay837058098" name="oauth2relay837058098"></iframe></body></html>

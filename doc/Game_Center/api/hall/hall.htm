@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>hall - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="hall_files/style.css">
+<script async="" src="hall_files/cbgapi.loaded_1"></script><script async="" src="hall_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="hall_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="hall_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="hall_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="hall_files/fastbutton.htm" name="I0_1384611932807" id="I0_1384611932807" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package hall</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/hall"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#HallApp">type HallApp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#HallApp.Hall">func (a *HallApp) Hall(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#HallApp.Logout">func (a *HallApp) Logout(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#HallApp.Message">func (a *HallApp) Message(usr SimpleUser) revel.Result</a></dd>
+				
+			
+				
+				<dd><a href="#Room">type Room</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/hall/HallApp.go">HallApp.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/hall/Room.go">Room.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="HallApp">type <a href="http://localhost:6060/src/pkg/colder/hall/HallApp.go?s=89:132#L1">HallApp</a></h2>
+			<pre>type HallApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理大厅界面所有请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="HallApp.Hall">func (*HallApp) <a href="http://localhost:6060/src/pkg/colder/hall/HallApp.go?s=163:214#L4">Hall</a></h3>
+				<pre>func (a *<a href="#HallApp">HallApp</a>) Hall(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入大厅请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="HallApp.Logout">func (*HallApp) <a href="http://localhost:6060/src/pkg/colder/hall/HallApp.go?s=336:389#L10">Logout</a></h3>
+				<pre>func (a *<a href="#HallApp">HallApp</a>) Logout(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 登出请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="HallApp.Message">func (*HallApp) <a href="http://localhost:6060/src/pkg/colder/hall/HallApp.go?s=254:308#L7">Message</a></h3>
+				<pre>func (a *<a href="#HallApp">HallApp</a>) Message(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 获得系统消息请求
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Room">type <a href="http://localhost:6060/src/pkg/colder/hall/Room.go?s=127:191#L1">Room</a></h2>
+			<pre>type Room struct {
+    RoomName <a href="http://localhost:6060/pkg/builtin/#string">string</a>
+    RoomID   <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+    GameID   <a href="http://localhost:6060/pkg/builtin/#int">int</a>
+}</pre>
+			<p>
+游戏房间信息
+</p>
+<pre>RoomName: 房间名
+RoomID: 房间编号
+GameID: 房间对应的游戏编号
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="hall_files/postmessageRelay.htm" id="oauth2relay240411566" name="oauth2relay240411566"></iframe></body></html>

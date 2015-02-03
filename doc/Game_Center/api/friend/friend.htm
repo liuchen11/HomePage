@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>friend - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="friend_files/style.css">
+<script async="" src="friend_files/cbgapi.loaded_1"></script><script async="" src="friend_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="friend_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="friend_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="friend_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="friend_files/fastbutton.htm" name="I0_1384611886939" id="I0_1384611886939" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package friend</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/friend"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#FriendApp">type FriendApp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.AddFriend">func (a *FriendApp) AddFriend(you SimpleUser, friend SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.ConfirmFriend">func (a *FriendApp) ConfirmFriend(you SimpleUser, friend SimpleUser, isadd bool) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.DeleteFriend">func (a *FriendApp) DeleteFriend(you SimpleUser, friend SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.FindUser">func (a *FriendApp) FindUser(you SimpleUser, usertofind string) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.Index">func (a *FriendApp) Index() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#FriendApp.ShowFriend">func (a *FriendApp) ShowFriend(you SimpleUser) revel.Result</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go">FriendApp.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="FriendApp">type <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=85:130#L1">FriendApp</a></h2>
+			<pre>type FriendApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理所有好友管理界面的请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="FriendApp.AddFriend">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=446:522#L12">AddFriend</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) AddFriend(you <a href="#SimpleUser">SimpleUser</a>, friend <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 添加用户请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="FriendApp.ConfirmFriend">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=557:648#L15">ConfirmFriend</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) ConfirmFriend(you <a href="#SimpleUser">SimpleUser</a>, friend <a href="#SimpleUser">SimpleUser</a>, isadd <a href="http://localhost:6060/pkg/builtin/#bool">bool</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 确认好友请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="FriendApp.DeleteFriend">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=683:762#L18">DeleteFriend</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) DeleteFriend(you <a href="#SimpleUser">SimpleUser</a>, friend <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 删除好友请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="FriendApp.FindUser">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=336:411#L9">FindUser</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) FindUser(you <a href="#SimpleUser">SimpleUser</a>, usertofind <a href="http://localhost:6060/pkg/builtin/#string">string</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 查找用户请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="FriendApp.Index">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=162:202#L3">Index</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) Index() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+转向好友管理界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="FriendApp.ShowFriend">func (*FriendApp) <a href="http://localhost:6060/src/pkg/colder/friend/FriendApp.go?s=242:301#L6">ShowFriend</a></h3>
+				<pre>func (a *<a href="#FriendApp">FriendApp</a>) ShowFriend(you <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 显示好友信息请求
+</p>
+
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="friend_files/postmessageRelay.htm" id="oauth2relay685689564" name="oauth2relay685689564"></iframe></body></html>

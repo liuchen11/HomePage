@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>room - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="room_files/style.css">
+<script async="" src="room_files/cbgapi.loaded_1"></script><script async="" src="room_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="room_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="room_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="room_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="room_files/fastbutton.htm" name="I0_1384612064109" id="I0_1384612064109" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package room</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/room"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggle">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#PlayerList">type PlayerList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PlayerList.AddPlayer">func (a *PlayerList) AddPlayer(player Player) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PlayerList.DeletePlayer">func (a *PlayerList) DeletePlayer(player Player) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PlayerList.Update">func (a *PlayerList) Update(RoomApp) int</a></dd>
+				
+			
+				
+				<dd><a href="#Room">type Room</a></dd>
+				
+				
+			
+				
+				<dd><a href="#RoomApp">type RoomApp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#RoomApp.BackToHall">func (a *RoomApp) BackToHall(usr SimpleUser, gameid int) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#RoomApp.Room">func (a *RoomApp) Room(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#RoomApp.UserInformation">func (a *RoomApp) UserInformation(usr SimpleUser, gameid int) revel.Result</a></dd>
+				
+			
+				
+				<dd><a href="#Table">type Table</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.AddPlayer">func (a *Table) AddPlayer(player Player) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.BeginGame">func (a *Table) BeginGame() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.ChangePlayer">func (a *Table) ChangePlayer() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.DeletePlayer">func (a *Table) DeletePlayer(player Player, tableid int) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.EndGame">func (a *Table) EndGame() int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.IsBegin">func (a *Table) IsBegin() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.IsOccupy">func (a *Table) IsOccupy() bool</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#Table.SetPrepare">func (a *Table) SetPrepare() int</a></dd>
+				
+			
+				
+				<dd><a href="#TableList">type TableList</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TableList.AddPlayer">func (a *TableList) AddPlayer(player Player, tableid int) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TableList.DeletePlayer">func (a *TableList) DeletePlayer(player Player, tableid int) int</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#TableList.Update">func (a *TableList) Update(room RoomApp) int</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/room/PlayerList.go">PlayerList.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/room/Room.go">Room.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/room/RoomApp.go">RoomApp.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/room/Table.go">Table.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/room/TableList.go">TableList.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="PlayerList">type <a href="http://localhost:6060/src/pkg/colder/room/PlayerList.go?s=117:160#L1">PlayerList</a></h2>
+			<pre>type PlayerList struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+某一个游戏的玩家列表。每一个游戏都对应一个PlayerList
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="PlayerList.AddPlayer">func (*PlayerList) <a href="http://localhost:6060/src/pkg/colder/room/PlayerList.go?s=195:244#L3">AddPlayer</a></h3>
+				<pre>func (a *<a href="#PlayerList">PlayerList</a>) AddPlayer(player <a href="#Player">Player</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家进入房间时执行
+</p>
+
+				
+				
+			
+				
+				<h3 id="PlayerList.DeletePlayer">func (*PlayerList) <a href="http://localhost:6060/src/pkg/colder/room/PlayerList.go?s=282:334#L6">DeletePlayer</a></h3>
+				<pre>func (a *<a href="#PlayerList">PlayerList</a>) DeletePlayer(player <a href="#Player">Player</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家推出房间时执行
+</p>
+
+				
+				
+			
+				
+				<h3 id="PlayerList.Update">func (*PlayerList) <a href="http://localhost:6060/src/pkg/colder/room/PlayerList.go?s=403:443#L9">Update</a></h3>
+				<pre>func (a *<a href="#PlayerList">PlayerList</a>) Update(<a href="#RoomApp">RoomApp</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+执行AddPlayer与DeletePlayer时通过RoomApp刷新房间
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Room">type <a href="http://localhost:6060/src/pkg/colder/room/Room.go?s=32:96#L1">Room</a></h2>
+			<pre>type Room struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+房间信息
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RoomApp">type <a href="http://localhost:6060/src/pkg/colder/room/RoomApp.go?s=71:114#L1">RoomApp</a></h2>
+			<pre>type RoomApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理所有房间的请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="RoomApp.BackToHall">func (*RoomApp) <a href="http://localhost:6060/src/pkg/colder/room/RoomApp.go?s=340:408#L9">BackToHall</a></h3>
+				<pre>func (a *<a href="#RoomApp">RoomApp</a>) BackToHall(usr <a href="#SimpleUser">SimpleUser</a>, gameid <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 返回大厅
+</p>
+
+				
+				
+			
+				
+				<h3 id="RoomApp.Room">func (*RoomApp) <a href="http://localhost:6060/src/pkg/colder/room/RoomApp.go?s=139:190#L3">Room</a></h3>
+				<pre>func (a *<a href="#RoomApp">RoomApp</a>) Room(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入房间
+</p>
+
+				
+				
+			
+				
+				<h3 id="RoomApp.UserInformation">func (*RoomApp) <a href="http://localhost:6060/src/pkg/colder/room/RoomApp.go?s=239:312#L6">UserInformation</a></h3>
+				<pre>func (a *<a href="#RoomApp">RoomApp</a>) UserInformation(usr <a href="#SimpleUser">SimpleUser</a>, gameid <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 显示好友在该游戏中信息
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Table">type <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=261:406#L4">Table</a></h2>
+			<pre>type Table struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+游戏桌
+</p>
+<pre>occupynum: 桌子上玩家人数
+occupyuser: 桌子上所有玩家
+maxplayer: 玩家人数
+isbegin: 游戏是否开始
+host: 桌主所在座位号
+prepare: 玩家是否准备好游戏
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="Table.AddPlayer">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=462:506#L16">AddPlayer</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) AddPlayer(player <a href="#Player">Player</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+用户加入该桌子调用，返回座位编号
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.BeginGame">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=926:957#L34">BeginGame</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) BeginGame() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+开始游戏
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.ChangePlayer">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=793:827#L28">ChangePlayer</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) ChangePlayer() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家更改座位，返回座位号
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.DeletePlayer">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=544:603#L19">DeletePlayer</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) DeletePlayer(player <a href="#Player">Player</a>, tableid <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+用户离开该桌子调用
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.EndGame">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=980:1009#L37">EndGame</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) EndGame() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+结束游戏
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.IsBegin">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=716:746#L25">IsBegin</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) IsBegin() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+判断桌子游戏是否正在进行
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.IsOccupy">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=638:669#L22">IsOccupy</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) IsOccupy() <a href="http://localhost:6060/pkg/builtin/#bool">bool</a></pre>
+				<p>
+判断桌子是否已满
+</p>
+
+				
+				
+			
+				
+				<h3 id="Table.SetPrepare">func (*Table) <a href="http://localhost:6060/src/pkg/colder/room/Table.go?s=871:903#L31">SetPrepare</a></h3>
+				<pre>func (a *<a href="#Table">Table</a>) SetPrepare() <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+设置玩家是否准备好游戏
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="TableList">type <a href="http://localhost:6060/src/pkg/colder/room/TableList.go?s=77:150#L1">TableList</a></h2>
+			<pre>type TableList struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+一个房间的所有桌子信息
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="TableList.AddPlayer">func (*TableList) <a href="http://localhost:6060/src/pkg/colder/room/TableList.go?s=182:242#L5">AddPlayer</a></h3>
+				<pre>func (a *<a href="#TableList">TableList</a>) AddPlayer(player <a href="#Player">Player</a>, tableid <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家进入一个桌子
+</p>
+
+				
+				
+			
+				
+				<h3 id="TableList.DeletePlayer">func (*TableList) <a href="http://localhost:6060/src/pkg/colder/room/TableList.go?s=277:340#L8">DeletePlayer</a></h3>
+				<pre>func (a *<a href="#TableList">TableList</a>) DeletePlayer(player <a href="#Player">Player</a>, tableid <a href="http://localhost:6060/pkg/builtin/#int">int</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家离开一个桌字
+</p>
+
+				
+				
+			
+				
+				<h3 id="TableList.Update">func (*TableList) <a href="http://localhost:6060/src/pkg/colder/room/TableList.go?s=406:450#L11">Update</a></h3>
+				<pre>func (a *<a href="#TableList">TableList</a>) Update(room <a href="#RoomApp">RoomApp</a>) <a href="http://localhost:6060/pkg/builtin/#int">int</a></pre>
+				<p>
+玩家进入、离开桌子时调用RoomApp刷新页面
+</p>
+
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="room_files/postmessageRelay.htm" id="oauth2relay607013423" name="oauth2relay607013423"></iframe></body></html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>log - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="log_files/style.css">
+<script async="" src="log_files/cbgapi.loaded_1"></script><script async="" src="log_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="log_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="log_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="log_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="log_files/fastbutton.htm" name="I0_1384612004864" id="I0_1384612004864" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package log</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/log"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#LoginApp">type LoginApp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.ChangePassword">func (a *LoginApp) ChangePassword() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.ChangePasswordSuccess">func (a *LoginApp) ChangePasswordSuccess() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.Forget">func (a *LoginApp) Forget() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.Index">func (a *LoginApp) Index() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.Login">func (a *LoginApp) Login() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.PostChangePassword">func (a *LoginApp) PostChangePassword(usr RegisterUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.PostForget">func (a *LoginApp) PostForget(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.PostLogin">func (a *LoginApp) PostLogin(usr LoginUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.PostRegister">func (a *LoginApp) PostRegister(usr RegisterUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.Register">func (a *LoginApp) Register() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#LoginApp.RegisterSuccess">func (a *LoginApp) RegisterSuccess() revel.Result</a></dd>
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go">LoginApp.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="LoginApp">type <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=94:138#L1">LoginApp</a></h2>
+			<pre>type LoginApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理与用户登录、注册相关的所有请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="LoginApp.ChangePassword">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=677:725#L21">ChangePassword</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) ChangePassword() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入修改密码界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.ChangePasswordSuccess">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=1053:1108#L33">ChangePasswordSuccess</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) ChangePasswordSuccess() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 修改密码成功请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.Forget">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=765:805#L24">Forget</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) Forget() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入忘记密码界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.Index">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=172:211#L3">Index</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) Index() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 链接到登录界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.Login">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=245:284#L6">Login</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) Login() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入登录界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.PostChangePassword">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=945:1013#L30">PostChangePassword</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) PostChangePassword(usr <a href="#RegisterUser">RegisterUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送修改密码请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.PostForget">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=846:904#L27">PostForget</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) PostForget(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送忘记密码请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.PostLogin">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=319:375#L9">PostLogin</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) PostLogin(usr <a href="#LoginUser">LoginUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送登录请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.PostRegister">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=498:560#L15">PostRegister</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) PostRegister(usr <a href="#RegisterUser">RegisterUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送注册用户请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.Register">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=415:457#L12">Register</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) Register() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入注册用户界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="LoginApp.RegisterSuccess">func (*LoginApp) <a href="http://localhost:6060/src/pkg/colder/log/LoginApp.go?s=588:637#L18">RegisterSuccess</a></h3>
+				<pre>func (a *<a href="#LoginApp">LoginApp</a>) RegisterSuccess() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 注册成功
+</p>
+
+				
+				
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="log_files/postmessageRelay.htm" id="oauth2relay2019031513" name="oauth2relay2019031513"></iframe></body></html>

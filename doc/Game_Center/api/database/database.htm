@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>database - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="database_files/style.css">
+<script async="" src="database_files/cbgapi.loaded_1"></script><script async="" src="database_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="database_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="database_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="database_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="database_files/fastbutton.htm" name="I0_1384611836562" id="I0_1384611836562" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package database</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/database"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#AbstractDatabase">type AbstractDatabase</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#AbstractDatabase.Close">func (a *AbstractDatabase) Close()</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#AbstractDatabase.Connect">func (a *AbstractDatabase) Connect(info ConnectInfo) error</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#AbstractDatabase.Execute">func (a *AbstractDatabase) Execute() error</a></dd>
+				
+			
+				
+				<dd><a href="#AddFriendDatabase">type AddFriendDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ChangePasswordDatabase">type ChangePasswordDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ConfirmFriendDatabase">type ConfirmFriendDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#DeleteFriendDatabase">type DeleteFriendDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#FindUserDatabase">type FindUserDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#GameDatabase">type GameDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#GetGameDatabase">type GetGameDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#LoginDataBase">type LoginDataBase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#LogoutDatabase">type LogoutDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ModifyGameDatabase">type ModifyGameDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ModifyPasswordDatabase">type ModifyPasswordDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PersonInfoDatabase">type PersonInfoDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PersonInfoModifyDatabase">type PersonInfoModifyDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PlayerDatabase">type PlayerDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PostGameDatabase">type PostGameDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#RegisterDataBase">type RegisterDataBase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#RoomDatabase">type RoomDatabase</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ShowFriendDatabase">type ShowFriendDatabase</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/database/DataBase.go">DataBase.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="AbstractDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=220:274#L2">AbstractDatabase</a></h2>
+			<pre>type AbstractDatabase struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+完成对数据库的连接、读写、关闭操作。
+每个派生类完成一种对数据库的操作。需要重写读写方法
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="AbstractDatabase.Close">func (*AbstractDatabase) <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=533:567#L12">Close</a></h3>
+				<pre>func (a *<a href="#AbstractDatabase">AbstractDatabase</a>) Close()</pre>
+				<p>
+关闭数据库
+</p>
+
+				
+				
+			
+				
+				<h3 id="AbstractDatabase.Connect">func (*AbstractDatabase) <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=297:355#L7">Connect</a></h3>
+				<pre>func (a *<a href="#AbstractDatabase">AbstractDatabase</a>) Connect(info <a href="#ConnectInfo">ConnectInfo</a>) <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+连接数据库
+</p>
+
+				
+				
+			
+				
+				<h3 id="AbstractDatabase.Execute">func (*AbstractDatabase) <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=467:509#L10">Execute</a></h3>
+				<pre>func (a *<a href="#AbstractDatabase">AbstractDatabase</a>) Execute() <a href="http://localhost:6060/pkg/builtin/#error">error</a></pre>
+				<p>
+读写数据库
+每个派生类都需要重写这个函数，完成对数据库不同的访问操作
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="AddFriendDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2217:2307#L90">AddFriendDatabase</a></h2>
+			<pre>type AddFriendDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+发送添加好友申请访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ChangePasswordDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=3280:3369#L136">ChangePasswordDatabase</a></h2>
+			<pre>type ChangePasswordDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+忘记密码时访问数据库
+</p>
+<pre>state: 表示忘记密码访问数据库的状态，0为查找用户名是否存在，1为修改数据库中密码信息
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ConfirmFriendDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2063:2170#L82">ConfirmFriendDatabase</a></h2>
+			<pre>type ConfirmFriendDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+确认添加好友请求时访问数据库
+</p>
+<pre>isadd: true表示同意，false表示忽略
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="DeleteFriendDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1872:1965#L74">DeleteFriendDatabase</a></h2>
+			<pre>type DeleteFriendDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+删除好友时访问数据库
+</p>
+<pre>you: 当前用户
+friend: 当前用户好友
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="FindUserDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2345:2438#L97">FindUserDatabase</a></h2>
+			<pre>type FindUserDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+查找好友时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="GameDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1009:1073#L29">GameDatabase</a></h2>
+			<pre>type GameDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    GameList <a href="#list">list</a>
+}</pre>
+			<p>
+进入大厅时访问游戏数据库，显示所有用户自定义的游戏
+</p>
+<pre>GameList: 储存所有用户自定义的游戏
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="GetGameDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1608:1671#L60">GetGameDatabase</a></h2>
+			<pre>type GetGameDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+获取游戏信息时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LoginDataBase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2943:3008#L123">LoginDataBase</a></h2>
+			<pre>type LoginDataBase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+登录游戏时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="LogoutDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=611:677#L15">LogoutDatabase</a></h2>
+			<pre>type LogoutDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    Su <a href="#SimpleUser">SimpleUser</a>
+}</pre>
+			<p>
+用户登出时对数据库访问
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ModifyGameDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1715:1781#L66">ModifyGameDatabase</a></h2>
+			<pre>type ModifyGameDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+修改游戏信息时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ModifyPasswordDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1379:1462#L48">ModifyPasswordDatabase</a></h2>
+			<pre>type ModifyPasswordDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+修改密码时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PersonInfoDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1276:1341#L42">PersonInfoDatabase</a></h2>
+			<pre>type PersonInfoDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+显示个人信息时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PersonInfoModifyDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1161:1232#L36">PersonInfoModifyDatabase</a></h2>
+			<pre>type PersonInfoModifyDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+修改个人信息时访问数据库
+</p>
+<pre>user: 储存写入数据库的新信息
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PlayerDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2831:2905#L116">PlayerDatabase</a></h2>
+			<pre>type PlayerDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+查询玩家信息时访问数据库
+</p>
+<pre>gameid: 当前游戏编号
+p: 待查询的玩家
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PostGameDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=1500:1564#L54">PostGameDatabase</a></h2>
+			<pre>type PostGameDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+提交游戏时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RegisterDataBase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=3046:3117#L129">RegisterDataBase</a></h2>
+			<pre>type RegisterDataBase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+注册用户时访问数据库
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RoomDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=811:875#L22">RoomDatabase</a></h2>
+			<pre>type RoomDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    RoomList <a href="#list">list</a>
+}</pre>
+			<p>
+进入大厅时访问游戏数据库，显示所有上线的游戏
+</p>
+<pre>RoomList: 储存所有从数据库读取的房间列表
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ShowFriendDatabase">type <a href="http://localhost:6060/src/pkg/colder/database/DataBase.go?s=2617:2730#L106">ShowFriendDatabase</a></h2>
+			<pre>type ShowFriendDatabase struct {
+    *<a href="#AbstractDatabase">AbstractDatabase</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+显示用户所有好友时访问数据库
+</p>
+<pre>friends: 所有好友列表，从数据库获得
+friendtoconfirm: 所有待确认添加好友列表，从数据库获得
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="database_files/postmessageRelay.htm" id="oauth2relay832659873" name="oauth2relay832659873"></iframe></body></html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>person - The Go Programming Language</title>
+
+<link type="text/css" rel="stylesheet" href="person_files/style.css">
+<script async="" src="person_files/cbgapi.loaded_1"></script><script async="" src="person_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="person_files/plusone.js" async="" type="text/javascript"></script><script type="text/javascript" src="person_files/jquery.js"></script>
+<script type="text/javascript">window.jQuery || document.write(unescape("%3Cscript src='/doc/jquery.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<script type="text/javascript" src="person_files/godocs.txt"></script>
+
+</head>
+<body>
+
+<div id="topbar" class="wide"><div class="container">
+
+<form method="GET" action="/search">
+<div style="min-width: 650px;" id="menu">
+<a href="http://localhost:6060/doc/">Documents</a>
+<a href="http://localhost:6060/ref/">References</a>
+<a href="http://localhost:6060/pkg/">Packages</a>
+<a href="http://localhost:6060/project/">The Project</a>
+<a href="http://localhost:6060/help/">Help</a>
+
+<input id="search" name="q" class="inactive" value="Search" placeholder="Search" type="text">
+</div>
+<div id="heading"><a href="http://localhost:6060/">The Go Programming Language</a></div>
+</form>
+
+</div></div>
+
+
+
+<div tabindex="-1" style="outline: 0px none;" id="page" class="wide">
+<div class="container">
+
+
+  <div id="plusone"><div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: none repeat scroll 0% 0% transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 24px; height: 15px;"><iframe title="+1" data-gapiattached="true" src="person_files/fastbutton.htm" name="I0_1384612031993" id="I0_1384612031993" vspace="0" tabindex="0" style="position: static; top: 0px; width: 24px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" marginwidth="0" marginheight="0" hspace="0" frameborder="0" scrolling="no" width="100%"></iframe></div></div>
+  <h1>Package person</h1>
+
+
+
+
+<div id="nav"></div>
+
+
+<!--
+	Copyright 2009 The Go Authors. All rights reserved.
+	Use of this source code is governed by a BSD-style
+	license that can be found in the LICENSE file.
+-->
+<!--
+	Note: Static (i.e., not template-generated) href and id
+	attributes start with "pkg-" to make it impossible for
+	them to conflict with generated attributes (some of which
+	correspond to Go identifiers).
+-->
+
+	
+		
+		<div id="short-nav">
+			<dl>
+			<dd><code>import "colder/person"</code></dd>
+			</dl>
+			<dl>
+			<dd><a href="#pkg-overview" class="overviewLink">Overview</a></dd>
+			<dd><a href="#pkg-index" class="indexLink">Index</a></dd>
+			
+			
+			</dl>
+		</div>
+		<!-- The package's Name is printed as title by the top-level template -->
+		<div id="pkg-overview" class="toggleVisible">
+			<div class="collapsed">
+				<h2 class="toggleButton" title="Click to show Overview section">Overview ▹</h2>
+			</div>
+			<div class="expanded">
+				<h2 class="toggleButton" title="Click to hide Overview section">Overview ▾</h2>
+				
+			</div>
+		</div>
+		
+
+		<div id="pkg-index" class="toggleVisible">
+		<div class="collapsed">
+			<h2 class="toggleButton" title="Click to show Index section">Index ▹</h2>
+		</div>
+		<div class="expanded">
+			<h2 class="toggleButton" title="Click to hide Index section">Index ▾</h2>
+
+		<!-- Table of contents for API; must be named manual-nav to turn off auto nav. -->
+			<div id="manual-nav">
+			<dl>
+			
+			
+			
+			
+				
+				<dd><a href="#LoginUser">type LoginUser</a></dd>
+				
+				
+			
+				
+				<dd><a href="#ModifyPasswordUser">type ModifyPasswordUser</a></dd>
+				
+				
+			
+				
+				<dd><a href="#PersonApp">type PersonApp</a></dd>
+				
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PersonApp.Index">func (a *PersonApp) Index() revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PersonApp.Password">func (a *PersonApp) Password(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PersonApp.PersonInfo">func (a *PersonApp) PersonInfo(usr SimpleUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PersonApp.PostPassword">func (a *PersonApp) PostPassword(usr ChangePasswordUser) revel.Result</a></dd>
+				
+					
+					<dd>&nbsp; &nbsp; <a href="#PersonApp.PostPersonInfo">func (a *PersonApp) PostPersonInfo(usr User) revel.Result</a></dd>
+				
+			
+				
+				<dd><a href="#Player">type Player</a></dd>
+				
+				
+			
+				
+				<dd><a href="#RegisterUser">type RegisterUser</a></dd>
+				
+				
+			
+				
+				<dd><a href="#SimpleUser">type SimpleUser</a></dd>
+				
+				
+			
+				
+				<dd><a href="#User">type User</a></dd>
+				
+				
+			
+			
+			</dl>
+			</div><!-- #manual-nav -->
+
+		
+
+		
+			<h4>Package files</h4>
+			<p>
+			<span style="font-size:90%">
+			
+				<a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go">PersonApp.go</a>
+			
+				<a href="http://localhost:6060/src/pkg/colder/person/User.go">User.go</a>
+			
+			</span>
+			</p>
+		
+		</div><!-- .expanded -->
+		</div><!-- #pkg-index -->
+
+		
+		
+		
+		
+			
+			
+			<h2 id="LoginUser">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=705:744#L31">LoginUser</a></h2>
+			<pre>type LoginUser struct {
+    *<a href="#SimpleUser">SimpleUser</a>
+}</pre>
+			<p>
+登录时使用的用户信息
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="ModifyPasswordUser">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=995:1089#L45">ModifyPasswordUser</a></h2>
+			<pre>type ModifyPasswordUser struct {
+    *<a href="#SimpleUser">SimpleUser</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+更改密码时使用的用户信息
+</p>
+<pre>newPassword: 新密码
+confirmParrowrd: 确认新密码
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="PersonApp">type <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=91:136#L1">PersonApp</a></h2>
+			<pre>type PersonApp struct {
+    *<a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Controller">Controller</a>
+}</pre>
+			<p>
+管理个人信息所有请求
+</p>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+				
+				<h3 id="PersonApp.Index">func (*PersonApp) <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=174:214#L4">Index</a></h3>
+				<pre>func (a *<a href="#PersonApp">PersonApp</a>) Index() <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+进入个人信息修改界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="PersonApp.Password">func (*PersonApp) <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=451:508#L13">Password</a></h3>
+				<pre>func (a *<a href="#PersonApp">PersonApp</a>) Password(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 进入修改密码界面
+</p>
+
+				
+				
+			
+				
+				<h3 id="PersonApp.PersonInfo">func (*PersonApp) <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=248:307#L7">PersonInfo</a></h3>
+				<pre>func (a *<a href="#PersonApp">PersonApp</a>) PersonInfo(usr <a href="#SimpleUser">SimpleUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+GET: 显示个人信息
+</p>
+
+				
+				
+			
+				
+				<h3 id="PersonApp.PostPassword">func (*PersonApp) <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=549:618#L16">PostPassword</a></h3>
+				<pre>func (a *<a href="#PersonApp">PersonApp</a>) PostPassword(usr <a href="#ChangePasswordUser">ChangePasswordUser</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送修改密码请求
+</p>
+
+				
+				
+			
+				
+				<h3 id="PersonApp.PostPersonInfo">func (*PersonApp) <a href="http://localhost:6060/src/pkg/colder/person/PersonApp.go?s=354:411#L10">PostPersonInfo</a></h3>
+				<pre>func (a *<a href="#PersonApp">PersonApp</a>) PostPersonInfo(usr <a href="#User">User</a>) <a href="http://localhost:6060/pkg/revel/">revel</a>.<a href="http://localhost:6060/pkg/revel/#Result">Result</a></pre>
+				<p>
+POST: 发送修改个人信息请求
+</p>
+
+				
+				
+			
+		
+			
+			
+			<h2 id="Player">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=1229:1343#L56">Player</a></h2>
+			<pre>type Player struct {
+    *<a href="#SimpleUser">SimpleUser</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+玩家在某一个游戏时的用户信息
+</p>
+<pre>winboat: 胜场
+lostboat: 负场
+tieboat: 平场
+escapeboat: 逃跑场数
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="RegisterUser">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=816:887#L37">RegisterUser</a></h2>
+			<pre>type RegisterUser struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+注册时使用的用户信息
+</p>
+<pre>confirmPassword: 确认密码
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="SimpleUser">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=208:297#L2">SimpleUser</a></h2>
+			<pre>type SimpleUser struct {
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+基类，储存用户最基本的信息
+</p>
+<pre>username: 用户名
+password: 密码
+email: 邮箱
+role: 角色（管理员、普通用户、匿名用户）
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+			
+			
+			<h2 id="User">type <a href="http://localhost:6060/src/pkg/colder/person/User.go?s=515:667#L18">User</a></h2>
+			<pre>type User struct {
+    *<a href="#SimpleUser">SimpleUser</a>
+    <span class="comment">// contains filtered or unexported fields</span>
+}</pre>
+			<p>
+储存所有用户信息
+</p>
+<pre>sexinfo: 性别
+age: 年龄
+nickname: 昵称
+interests: 爱好
+icon: 头像
+isonline: 是否在线
+inroom: 所在房间编号
+intable: 所在桌子编号
+</pre>
+
+
+			
+
+			
+
+			
+
+			
+
+			
+		
+	
+
+	
+
+
+
+
+
+
+
+
+
+<div id="footer">
+Build version go1.1.2.<br>
+Except as <a href="http://code.google.com/policies.html#restrictions">noted</a>,
+the content of this page is licensed under the
+Creative Commons Attribution 3.0 License,
+and code is licensed under a <a href="http://localhost:6060/LICENSE">BSD license</a>.<br>
+<a href="http://localhost:6060/doc/tos.html">Terms of Service</a> | 
+<a href="http://www.google.com/intl/en/policies/privacy/">Privacy Policy</a>
+</div>
+
+</div><!-- .container -->
+</div><!-- #page -->
+
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+
+<iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" src="person_files/postmessageRelay.htm" id="oauth2relay579864348" name="oauth2relay579864348"></iframe></body></html>
