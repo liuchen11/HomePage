@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>Chen Liu :Homepage</title>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<style type="text/css">
+    body {background-image: url(background.jpg); font-family:"Times New Roman", Times, serif;}
+    .italic {font-style:italic;}
+    .bold {font-weight:bold;}
+</style>
+<LINK href="../src/style.css" rel=STYLESHEET type=text/css>
+<SCRIPT language=JavaScript src="../src/menu.js" type=text/javascript></SCRIPT>
+</head>
+
+<body>
+<div style="position:relative;">
+	<h5 style="float:right; margin-top:0px;"><a href="../zh_CN/index.html">中文版</a></h5><br>
+	<h5 style="float:right; margin-top:0px;"><a href="../home.html">New Version</a></h5>
+</div>
+<table cellspacing="10px">
+  <tr align="left" valign="center">
+    <td align="left">
+      <img alt="Loading..." src="../doc/me.png" style="width: 225px; height: 198px;">
+    </td>
+    <td valign="center">
+        <p style="font-weight: bold; font-size: 32px; margin-left: 10px">Chen Liu</p>
+        <p style="margin-left: 10px">I am an undergraduate student from <a href="http://www.cs.tsinghua.edu.cn/publish/csen/index.html">Department of Computer Science and Technology</a> at <a href="http://www.tsinghua.edu.cn/publish/newthuen/index.html">Tsinghua Unversity</a> now. After 4-year undergraduate period from 2011, I hope I can continue my further study and research at a top university in the world.
+        <p style="margin-left: 10px">I was born in the historic city of <a href="http://en.wikipedia.org/wiki/Nantong">Nantong</a> located at the coast of East China Sea and Yangtze River. I spent my high school life there before going to university in<a href="http://en.wikipedia.org/wiki/Beijing"> Beijing</a>.</p>
+    </td>
+  </tr>
+</table>
+
+<hr>
+<table width="100%">
+  <tr>
+    <th><a href="#edu">Education</a></th>
+    <th><a href="#res">Research</a></th>
+    <th><a href="#mpro">Major Projects</a></th>
+    <th><a href="#spro">Smaller Projects</a></th>
+    <th><a href="#srv">Services</a></th>
+    <th><a href="#awd">Awards</a></th>
+    <th><a href="#con">Contacts</a></th>
+  </tr>
+</table>
+<hr>
+
+<h3 id="edu">Education</h3>
+<li>Undergraduate Students at <a href="http://www.cs.tsinghua.edu.cn/publish/csen/index.html">Department of Computer Science and Technology</a>, <a href="http://www.tsinghua.edu.cn/publish/newthuen/index.html">Tsinghua Unversity</a>, <a href="http://en.wikipedia.org/wiki/Beijing"> Beijing</a>, <a href="http://en.wikipedia.org/wiki/P.R.China">P.R.China</a> (2011-)</li>
+<li>About Learning
+	<ul>
+		<li>GPA: 91.5 / 100</li>
+		<li>Rank 9th of Total 123 Students (Top 7%)</li>
+		<li>Transcripts (<a href="../doc/Transcript.pdf">Scanning Copy</a>,<a href="../doc/Transcript/First_Degree.htm">Web</a>).</li>
+	</ul>
+</li>
+
+<h3 id="res">Research</h3>
+<li>Class-Based Summarizations of Chinese Microblogs</li>
+<ul>
+	<li>Supervisor: <a href="http://www.cs.tsinghua.edu.cn/publish/csen/4623/2010/20101224234620586482312/20101224234620586482312_.html">Hua Xu</a>, Associate Professor, <a href="http://www.tnlist.org.cn/pages/english.jsp">Tsinghua National Laboratory for Information Science and Technology.</a></li>
+	<li>March 2014 - Now</li>
+	<li>In times of big data, there are millions of Chinese microblogs(also known as weibo) posted every day. It is necessary to generate summarizations of these microblogs automatically. However, many developed systems and algorithms like The Phrase Reinforcement and Hybrid TF-IDF whose target language is English performs poorly in  Chinese corpus, because much more different or informal expression in weibo delivering the same meaning weaken the power of words-cooccurence-based algorithms. This research focuses on designing a class-based algorithm to generate summaries of Chinese microblogs. It firstly uses machine learning algorithms such as LogicLDA and Word2Vec to distribute words into classifications in which words deliver the same meaning. Then we use a tree pattern reinforcement algorithms to generate summaries based on the classification in the first step. Related work and algorithm references can be seen in <a href="../doc/ClassBased_Summarization.pdf">this slide</a>.</li>
+</ul>
+
+<h3 id="mpro">Major Projects</h3>
+<li>Dynamic Academic Hot Topic Discovery</li>
+<ul>
+	<li>April 2014 - June 2014, with Yang Liu</li>
+	<li>In this project, we build a web service which offers a convenient way to detect hot academic topics and their relevance over time. We provide two APIs for users to query, one is to present related topics in a quantity way of the input over time, the other is to draw a chart line showing the dynamic relevance of two academic topics users have input. We take advantage of the algorithm Word2Vec to train a model to discover the relative academic hot words at each year according to database of NIPS. The web service is built under the framework of python flask with several javascript libraries like ichartjs. More information and demo can be seen in <a href="../doc/DMiner.pdf">this poster</a>.</li>
+</ul>
+
+<li>An Omnipotent Card Game Center</li>
+<ul>
+	<li>September 2013 - December 2013, as a member of a developing group of five named Colder</li>
+	<li>In this software project, we develop an on-line game center system where users can upload rule files to create a kind of new game based on cards. We implement this platform with golang programming language and revel framework. My contribution to this project is to design a language which combines C-style function and regular expression to describe any card-based games and implement an interpretor of it using the knowledge of compiler and formal language. Here offers <a href="../doc/Game_Center/cardLanguage.pdf">a brief introduction to this language</a> and <a href="../doc/Game_Center/api/colder.htm">the structure of modules of the whole project</a>.</li>
+</ul>
+
+<li>A Simple Rhythm Master Game Platform</li>
+<ul>
+	<li>June 2013, with Yang Liu</li>
+	<li>We use a 8*16 LED matrix, CPLD with only 240 logic unit plus few independent digital circuits to build a simple platform on which we can play rhythm games. We take LED as screen and use VHDL as programming language. The platform generates arrows directing up or down randomly and moving at a certain speed from right to left. The speed can be adjusted according to difficulty levels. The player should click the right key which is consistent with the arrow's direction when the arrow is in the hitting zone. When playing this game, we rhythmically click the up-key and down-key, so we call it 'rhythm master game'. More information and demos are offered <a href="../doc/Rhythm_Master.pdf">here</a>.</li>
+</ul>
+
+<h3 id="spro">Smaller Projects</h3>
+<hr>
+<table width="100%">
+	<tr>
+		<th>Project's name</th>
+		<th>Date</th>
+		<th>Language or Tools</th>
+		<th>Document or Demo</th>
+	</tr>
+	<tr align="center">
+		<td>Ensemble Learning Analysis</td>
+		<td>June 2014</td>
+		<td>Java, LibSVM, C4DTree</td>
+		<td><a href="../doc/EnsembleLearning.pdf">Document</a></td>
+	</tr>
+	<tr align="center">
+		<td>An Analysis of Decision Tree Classifier</td>
+		<td>March 2014</td>
+		<td>Java</td>
+		<td><a href="../doc/DecisionTreeClassifier.pdf">Document</a></td>
+	</tr>
+	<tr align="center">
+		<td>A Simple FTP Protocol Implement For Linux</td>
+		<td>December 2013</td>
+		<td>C++</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>16-bit MIPS Pipeline CPU</td>
+		<td>November 2013-December 2013</td>
+		<td>VHDL</td>
+		<td><a href="../doc/16bitMIPS.pdf">Document</a></td>
+	</tr>
+	<tr align="center">
+		<td>A User's Behavior Analysis Tool On Android</td>
+		<td>August 2013-September 2013</td>
+		<td>Java, Android VM</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>A x86 Assembly Interpretor</td>
+		<td>June 2013</td>
+		<td>C++</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>Mesh Simplification</td>
+		<td>May 2013-June 2013</td>
+		<td>C++, OpenGL</td>
+		<td><a href="../doc/Mesh.pdf">Demo</a></td>
+	</tr>
+	<tr align="center">
+		<td>Ray-tracing Drawing</td>
+		<td>April 2013-June 2013</td>
+		<td>C++, OpenCV</td>
+		<td><a href="../doc/Ray-Tracing.pdf">Demo</a></td>
+	</tr>
+	<tr align="center">
+		<td>Parallel Pre-process of An Advertisement Recommendation System</td>
+		<td>January 2013</td>
+		<td>Java, MapReduce</td>
+		<td><a href="../doc/Parallel_Preprocess.pdf">Document(in Chinese)</a></td>
+	</tr>
+</table>
+<hr>
+
+<h3 id="srv">Services</h3>
+<li>Member(2013) and director(2014) of the group of practice in the Youth League of department</li>
+<li>Took part in summer practice in 2012. Took the responsibility of captain of the detachment 'Caring for Girls in Gansu Province'. Researched the living conditions of girls, especially from minor nations, in <a href="http://en.wikipedia.org/wiki/Yuzhong_County">Yuzhong county</a> and <a href="http://en.wikipedia.org/wiki/Dongxiang_Autonomous_County">Dongxiang autonomous county</a> in Gansu Province, western China. The achievements of this practice ranked third place in the department and the report of this research won the <a href="http://www.ganhzyz.org/upload/2012lunwenjieguo.doc">second prize in the national competitions</a> held by <a href="http://en.nhfpc.gov.cn/">National Health and Family Planning Commission of the PRC</a>.</li>
+
+<h3 id="awd">Award</h3>
+<li>Scholarship of Academic Excellence in Tsinghua University(2014.10)</li>
+<li>Scholarship of Academic Excellence in Tsinghua University(2013.10)</li>
+<li>Scholarship of Social Work in Tsinghua University(2013.10)</li>
+<li>First prize of Physics Competition for College Students in Beijing(2012.12)</li>
+
+<h3 id="con">Contacts</h3>
+<li>Phone: (+86) 18810310301</li>
+<li>Email: liuchen112013@gmail.com, liuchen930121@163.com</li>
+
+<div style="position:relative;">
+	<h5 style="float:left; margin-bottom: 0px">Last Modified: 2014/10/23</a></h5>
+</div>
+</body>
