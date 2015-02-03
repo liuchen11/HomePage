@@ -1,0 +1,166 @@
+<html>
+<head>
+<title>刘晨的主页</title>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<style type="text/css">
+    body {background-image: url(background.jpg); font-family:"Times New Roman", Times, serif;}
+    .italic {font-style:italic;}
+    .bold {font-weight:bold;}
+</style>
+<LINK href="../src/style.css" rel=STYLESHEET type=text/css>
+<SCRIPT language=JavaScript src="../src/menu.js" type=text/javascript></SCRIPT>
+</head>
+
+<body>
+<div style="position:relative;">
+	<h5 style="float:right; margin-top:0px;"><a href="../en_US/index.html">English</a></h5><br>
+	<h5 style="float:right; margin-top:0px;"><a href="../home.html">New Version</a></h5>
+</div>
+<table cellspacing="10px">
+  <tr align="left" valign="center">
+    <td align="left">
+      <img alt="Loading..." src="../doc/me.png" style="width: 225px; height: 198px;">
+    </td>
+    <td valign="center">
+        <p style="font-weight: bold; font-size: 32px; margin-left: 10px">刘晨</p>
+        <p style="margin-left: 10px">我是一名<a href="http://www.tsinghua.edu.cn">清华大学</a><a href="http://www.cs.tsinghua.edu.cn">计算机系</a>的2011级本科生。在完成本科学业之后，我希望能够到一个世界顶级大学去研究深造。
+        <p style="margin-left: 10px">我出生在中国黄海之滨、扬子江畔的文化名城<a href="http://zh.wikipedia.org/wiki/%E5%8D%97%E9%80%9A%E5%B8%82">南通市</a>. 在我前往<a href="http://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82">北京市</a>读大学之前，我一直生活在那里。</p>
+    </td>
+  </tr>
+</table>
+
+<hr>
+<table width="100%">
+  <tr>
+    <th><a href="#edu">教育背景</a></th>
+    <th><a href="#res">研究经历</a></th>
+    <th><a href="#mpro">主要项目经历</a></th>
+    <th><a href="#spro">一些小项目</a></th>
+    <th><a href="#srv">社会工作</a></th>
+    <th><a href="#awd">荣誉</a></th>
+    <th><a href="#con">联系方式</a></th>
+  </tr>
+</table>
+<hr>
+
+<h3 id="edu">教育背景</h3>
+<li><a href="http://www.tsinghua.edu.cn">清华大学</a><a href="http://www.cs.tsinghua.edu.cn">计算机系</a>2011级本科生, <a href="http://zh.wikipedia.org/wiki/%E4%B8%AD%E5%9C%8B">中华人民共和国</a><a href="http://zh.wikipedia.org/wiki/%E5%8C%97%E4%BA%AC%E5%B8%82">北京市</a></li>
+<li>学习情况
+	<ul>
+		<li>学分绩: 91.5 / 100</li>
+		<li>全年级123人中第9名 (前 7%)</li>
+		<li>成绩单 (<a href="../doc/Transcript.pdf">扫描件</a>,<a href="../doc/Transcript/First_Degree.htm">网页</a>).</li>
+	</ul>
+</li>
+
+<h3 id="res">研究经历</h3>
+<li>基于主题模型的微博摘要生成</li>
+<ul>
+	<li>导师: <a href="http://www.cs.tsinghua.edu.cn/publish/cs/4616/2013/20131122154054592994188/20131122154054592994188_.html">徐华</a>, <a href="http://www.tnlist.org.cn/pages/intro.jsp">清华大学信息科学与技术国家实验室</a>副教授。</li>
+	<li>2014.3 至今</li>
+	<li>大数据时代，每天都有成千上万的微博发布到互联网上。所以我们十分有必要设计一个针对海量微博自动生成摘要的系统。然而目前许多像The Phrase Reinforcement和Hybrid TF-IDF一样成形的系统或者算法在中文文本上的性能都不是很好。一个很重要的原因是这些基于词语共现的算法不能很好适应微博中大量同义表达和口语化用词的特点。我的这项研究主要着眼于利用机器学习的方法设计一个基于主题的微博摘要生成算法。它首先使用类似LogicLDA和Word2Vec的方法对词语按照意义进行聚类，然后利用这个聚类的结果对采用类似pattern reinforcement算法的树模型进行摘要生成。相关的工作和引用的算法在这个<a href="../doc/ClassBased_Summarization.pdf">幻灯片</a>上。</li>
+</ul>
+
+<h3 id="mpro">主要项目经历</h3>
+<li>动态学术热点发现</li>
+<ul>
+	<li>2014.4-2014.6，与刘扬合作</li>
+	<li>在这个项目中，我们搭建了一个网站。通过这个网站我们可以查询某个领域的学术热点话题和不同时期它们的关联性。该网站一共有两个给用户使用的API，一个是定量显示不同时期与用户输入学术话题相关的话题，另一个是通过图表的形式显示不同的学术话题的相关度随时间的变化情况。我们是利用Word2Vec算法来训练出这样的一个模型的，训练集主要取自NIPS论文数据库 。网站采用的python的Flask框架，使用ichartjs等javascript包来使界面更加用户友好。更多信息和示例可以参见<a href="../doc/DMiner.pdf">这个海报</a>。</li>
+</ul>
+
+<li>万能扑克牌游戏中心</li>
+<ul>
+	<li>2013.9-2013.12，Colder五人软件开发小组</li>
+	<li>在这个软件工程开发项目中，我们开发一个在线纸牌游戏平台，用户只需要将自己的规则文件上载到这个平台上就可以创建一个自定义的游戏了。我们采用Golang语言和revel框架来实现这个平台。我对这个项目的主要贡献在于设计一个融合C语言风格和正则表达式的游戏开发语言，该语言能够描述几乎一切基于扑克牌的游戏。我利用编译原理和形式语言自动机理论编写了该语言的解释器。这里提供了 <a href="../doc/Game_Center/cardLanguage.pdf">该语言的简要介绍</a> 和 <a href="../doc/Game_Center/api/colder.htm">整个工程的模块结构</a>.</li>
+</ul>
+
+<li>一个简单的“节奏大师”游戏平台</li>
+<ul>
+	<li>2013.6，与刘扬合作</li>
+	<li>我们使用8×16的LED灯阵、只有240个逻辑单元的CPLD和少量的数字电路分立器件，搭建了一个简单的“节奏大师”游戏平台。我们使用VHDL硬件描述语言，将LED灯阵作为显示器。平台随机生成从右往左移动的上下箭头，箭头速度可以根据难度来调节。玩家需要在箭头进入击打区域的时候根据箭头的方向按下正确的按键。在游戏中我们需要有节奏地按表示向上箭头和向下箭头的按键，就像在玩“节奏大师”一样。<a href="../doc/Rhythm_Master.pdf">这里</a>我们提供了更详细的说明和示例。</li>
+</ul>
+
+<h3 id="spro">一些小项目</h3>
+<hr>
+<table width="100%">
+	<tr>
+		<th>项目名称</th>
+		<th>日期</th>
+		<th>编程语言或工具</th>
+		<th>文档或示例</th>
+	</tr>
+	<tr align="center">
+		<td>集成学习分析</td>
+		<td>2014.6</td>
+		<td>Java,LibSVM,C4DTree</td>
+		<td><a href="../doc/EnsembleLearning.pdf">文档</a></td>
+	</tr>
+	<tr align="center">
+		<td>决策树分析</td>
+		<td>2014.3</td>
+		<td>Java</td>
+		<td><a href="../doc/DecisionTreeClassifier.pdf">文档</a></td>
+	</tr>
+	<tr align="center">
+		<td>Linux系统上的FTP协议实现</td>
+		<td>2013.12</td>
+		<td>C++</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>16位流水线MIPS处理器</td>
+		<td>2013.11-2013.12</td>
+		<td>VHDL</td>
+		<td><a href="../doc/16bitMIPS.pdf">文档</a></td>
+	</tr>
+	<tr align="center">
+		<td>安卓版的用户行为分析工具</td>
+		<td>2013.8-2013.9</td>
+		<td>Java, 安卓虚拟机</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>x86汇编语言解释器</td>
+		<td>2013.6</td>
+		<td>C++</td>
+		<td></td>
+	</tr>
+	<tr align="center">
+		<td>网格简化</td>
+		<td>2013.5-2013.6</td>
+		<td>C++, OpenGL</td>
+		<td><a href="../doc/Mesh.pdf">示例</a></td>
+	</tr>
+	<tr align="center">
+		<td>光线追踪绘图</td>
+		<td>2013.4-2013.6</td>
+		<td>C++, OpenCV</td>
+		<td><a href="../doc/Ray-Tracing.pdf">示例</a></td>
+	</tr>
+	<tr align="center">
+		<td>一个广告推荐系统的并行预处理程序</td>
+		<td>2013.1</td>
+		<td>Java, MapReduce</td>
+		<td><a href="../doc/Parallel_Preprocess.pdf">文档</a></td>
+	</tr>
+</table>
+<hr>
+
+<h3 id="srv">社会工作</h3>
+<li>系团委实践组干事(2013)、组长(2014)。</li>
+<li>参加2012年暑期实践，担任“赴甘肃关爱女孩支队”支队长。在中国西部甘肃省<a href="http://zh.wikipedia.org/wiki/%E6%A6%86%E4%B8%AD%E5%8E%BF">榆中县</a>和<a href="http://zh.wikipedia.org/wiki/%E4%B8%9C%E4%B9%A1%E6%97%8F%E8%87%AA%E6%B2%BB%E5%8E%BF">东乡族自治县</a>研究当地女孩，特别是少数民族女孩，的生存状况。实践成果在系内评比中获得第三名，所编写的研究报告获得<a href="http://www.nhfpc.gov.cn/zhuzhan/">国家卫生部与计划生育委员会</a>所主办的<a href="http://www.ganhzyz.org/upload/2012lunwenjieguo.doc">关爱女孩主题作品评比二等奖</a>。</li>
+
+<h3 id="awd">荣誉</h3>
+<li>2014年清华大学学业优秀奖学金</li>
+<li>2013年清华大学学业优秀奖学金</li>
+<li>2013年清华大学社会工作奖学金</li>
+<li>2012年北京市大学生物理竞赛一等奖</li>
+
+<h3 id="con">联系方式</h3>
+<li>手机： (+86) 18810310301</li>
+<li>电子邮箱： liuchen112013@gmail.com, liuchen930121@163.com</li>
+
+<div style="position:relative;">
+<h5 style="float:left; margin-bottom: 0px">最后修改: 2014/10/23</a></h5>
+</div>
+</body>
