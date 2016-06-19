@@ -1,0 +1,94 @@
+/******** Custom Styles ********/
+
+html {
+	/* Sticky footer styles */
+	position: relative;
+	min-height: 100%;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.625;
+	/* Margin bottom by footer height */
+	margin-bottom: 80px;
+}
+body > .container {
+	padding: 110px 15px 0;
+}
+.container {
+	max-width: 960px;
+}
+.container .text-muted {
+	margin: 20px 0 0 0;
+}
+
+.navbar-default {
+	background-color: #e1e1e1;
+	border-color: #000;
+	padding-top: 30px;
+}
+.navbar-default .navbar-brand {
+	color: black;
+}
+.navbar-brand {
+	height: 70px;
+	padding: 15px 15px;
+	font-size: 42px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #05a4ac;
+    background: none;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+a {
+	color: #05a4ac;
+}
+a:hover {
+	color: #05a4ac;
+}
+p {
+	font-size: 1em;
+	line-height: 2em;
+	margin-bottom: 1em;
+}
+.page-header {
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+	border-bottom: 1px solid #05a4ac;
+}
+.subhead {
+	font-size: 1.5em;
+	font-weight: 600;
+	padding: 1em 0 0 0;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+.imgRight {
+	float: right;
+	margin: 0 0 2em 2em;
+	border: 1px solid #e1e1e1;
+}
+.postFooter {
+	padding: 1.5em 0;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 80px;
+	background-color: #E1E1E1;
+	border-top: 1px solid #000;
+}
+.footer > .container {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.text-muted {
+	font-size: .9em;
+	color: #000;
+	text-align: right;
+	line-height: 1.5em;
+}

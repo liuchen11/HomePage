@@ -1,0 +1,114 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+
+    <title>Research | Chen Liu</title>
+    <meta name="description" content="Teaching experience, including New York University St. Joseph’s College, and other Teaching Interests">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/custom.css" rel="stylesheet">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+	    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">Chen Liu</a>
+        </div>
+        
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+        <li ><a href="./home.html">Home</a></li>
+        <li ><a href="../doc/CV.pdf" target="_blank">CV</a></li>
+        <li ><a href="./education.html">Education</a></li>
+        <li class="active"><a href="./research.html">Research</a></li>
+        <li ><a href="./projects.html">Projects</a></li>
+        <li ><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+      <div class="page-header">
+        <h1>Research</h1>
+      </div>
+
+      <h3>Optimization methods for Neural Networks by Non-Euclidean Geometry</h3>
+      <p class="info">Supervisor: <a href="http://lions.epfl.ch/cms/site/lions2/lang/en/volkan.cevher">Volkan Cevher</a>, Associate Professor of EPFL<span>&bull;</span> <em class="date">January 2016 - Present</em></p>
+
+      <p>Most optimization methods we used in neural network are based on first-order or second-order gradient of Euclidean Geometry. In this project, we propose a novel optimization method based on Non-Euclidean Geometry. To more detail, it is based on infinity-norm instead of two-norm. We will apply this method mainly in recurrent neural network.</p>
+
+      <h3>Recurrent Convolutional Neural Network for Sentence Classification</h3>
+      <p class="info">Supervisor: <a href="http://xlhu.cn">Xiaolin Hu</a>, Associate Professor of Tsinghua<span>&bull;</span> <em class="date">December 2014 - July 2015</em></p>
+
+      <p>Recently, convolutional neural network(CNN) has achieved great success in areas such as pattern recognition because of its fewer parameters and power to extract hierarchical features. By adding recurrent connections in CNN, the model called recurrent convolutional neural network(RCNN) can even extract hierarchical features within a layer. RCNN has already shown state-of-art poformance in object recognition. My work is to apply this technology to the field of NLP to solve the problem of sentence classification. Unlike objection recognition, I will build a new model combined classic CNN, RCNN and MLP to complete this task. This is partly because of the latent representation of words and flexible length of sentences.</p>
+      <p> This project is the base of my <a href="../doc/ThuThesis.pdf"> bachelor thesis </a>(in Chinese). There is also a <a href="../doc/RCNNSentence.pdf">short summary report</a> of this project in English</p>
+
+      <center><img src="../doc/ThuThesisModel.png" width="80%"></center>
+
+      <h3>Class-Based Summarization of Chinese Microblogs</h3>
+      <p class="info">Supervisor: <a href="http://www.cs.tsinghua.edu.cn/publish/csen/4623/2010/20101224234620586482312/20101224234620586482312_.html">Hua Xu</a>, Associate Professor of Tsinghua<span>&bull;</span> <em class="date">March 2014 - July 2014</em></p>
+
+      <p>
+      In times of big data, there are millions of Chinese microblogs (also known as weibo) posted every day. It is necessary to generate summarizations of these microblogs automatically. However, many developed systems and algorithms like The Phrase Reinforcement and Hybrid TF-IDF whose target language is English performs poorly in Chinese corpus, because much more different or informal expression in weibo delivering the same meaning weaken the power of words-cooccurence-based algorithms. This research focuses on designing a class-based algorithm to generate summaries of Chinese microblogs. It firstly uses machine learning algorithms such as LogicLDA and Word2Vec to distribute words into classifications in which words deliver the same meaning. Then we use a tree pattern reinforcement algorithms to generate summaries based on the classification in the first step.</p>
+      <p>The report of this project can be seen <a href="../doc/SRT_Report.pdf">here</a>, and the source code is available on github(<a href="https://github.com/liuchen11/WeiboSummarization">https://github.com/liuchen11/WeiboSummarization</a>).</p>
+
+
+    </div>
+    
+      <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Copyright &copy; 2016 Chen Liu. All Rights Reserved.</br>
+        Last Modified: June 19th, 2016</p>
+      </div>
+      </footer>
+
+      <div class="postFooter">
+	      &nbsp;
+      </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Google Analytics
+    ================================================== -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-76291067-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </body>
+</html>
