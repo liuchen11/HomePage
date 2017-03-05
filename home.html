@@ -1,20 +1,36 @@
 <html>
 <head>
-<title>Select A Version | Chen Liu's HomePage</title>  
+    <title>Select A Version | Chen Liu's HomePage</title>  
+    <link href="css/welcomePage.css" rel="stylesheet" type="text/css">
+    <META content="text/html; charset=utf-8" http-equiv=Content-Type>
 </head>
 <body>
-<script language="JavaScript" type="text/javascript">
-var t=10;
-setInterval("refer()",1000);
-function refer(){  
-    if(t==0){ 
-        location="http://liuchen1993.cn/HomePage/main/home.html";
-    } 
-    document.getElementById('show').innerHTML=""+t;
-    t--;
-}
-</script>
-A new version of my homepage is online now : ). Please select the version you want to read. The browser will redirect to the new version in <span id="show"> 10 </span> seconds. </br>
-<a href="http://liuchen1993.cn/HomePage/old/index.html">Old HomePage</a> &nbsp &nbsp &nbsp <a href="http://liuchen1993.cn/HomePage/main/home.html">New HomePage</a> &nbsp &nbsp &nbsp &nbsp <a href="http://liuchen1993.cn:4000">Blog</a>
+    <script language="JavaScript" type="text/javascript">
+    var t=10;
+    setInterval("refer()",1000);
+    function refer(){  
+        if(t==0){ 
+            location="http://liuchen1993.cn/HomePage/main/home.html";
+        } 
+        document.getElementById('show1').innerHTML=""+t;
+        document.getElementById('show2').innerHTML=""+t;
+        t--;
+    }
+    </script>
+    <div class="content">
+    <table>
+        <tr><td width="30%"></td><td width="40%">Hello, Welcome to Chen Liu's webpages. Please select the content you want to read. The browser will automatically redirect to homepage in <span id="show1"> 10 </span> seconds.</td><td width="30%"></td></tr>
+        <tr><td width="30%"></td><td width="40%">您好，欢迎造访刘晨的个人空间，请选择你需要点阅的内容，浏览器将在<span id="show2"> 10 </span>秒后自动引导到个人主页.</td><td width="30%"></td></tr>
+        <tr><td width="30%"></td><td width="40%"><a href="./main/home.html" class="button orange" style="width:120px">HomePage/主页</a></td><td width="30%"></td></tr>
+        <tr><td width="30%"></td><td width="40%"><a href="http://liuchen1993.cn:4000" class="button orange" style="width:120px">Blog/博客</a></td><td width="30%"></td></tr>
+    </table>
+    </div>
+<!--     <div class="content">
+        <center>Hello, Welcome to Chen Liu's webpages. Please select the content you want to read. The browser will automatically redirect to my homepage in <span id="show"> 10 </span> seconds.</center> </br>
+        <center><a href="./main/home.html" class="button orange" width="200">HomePage</a></center></br></br>
+        <center><a href="http://liuchen1993.cn:4000" class="button orange" width="200">Blog</a></center>
+    </div> -->
+<!-- A new version of my homepage is online now : ). Please select the version you want to read. The browser will redirect to the new version in <span id="show"> 10 </span> seconds. </br>
+<a href="http://liuchen1993.cn/HomePage/old/index.html">Old HomePage</a> &nbsp &nbsp &nbsp <a href="http://liuchen1993.cn/HomePage/main/home.html">New HomePage</a> &nbsp &nbsp &nbsp &nbsp <a href="http://liuchen1993.cn:4000">Blog</a> -->
 </body>
 </html>
